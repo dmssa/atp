@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.8">
+	<Item id="028fa4a2-bda8-4e65-ae30-43dafed9f520">
+		<Name>Зимние</Name>
+		<Code>000000002</Code>
+		<Description>Зимние</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="f4ca093a-02a5-4818-933e-4a5388593c24">
+				<Name>Липучки</Name>
+				<Code>000000005</Code>
+				<Description>Липучки</Description>
+				<IsFolder>true</IsFolder>
+			</Item>
+			<Item id="1a6e02fb-cdde-4b0f-9e11-14e9dd9ca2d4">
+				<Name>СШипами</Name>
+				<Code>000000004</Code>
+				<Description>С шипами</Description>
+				<IsFolder>true</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="5e7f8995-807d-42ff-b0e2-2ea1e3eb310d">
+		<Name>Летние</Name>
+		<Code>000000003</Code>
+		<Description>Летние</Description>
+		<IsFolder>true</IsFolder>
+	</Item>
+	<Item id="73eb6ad9-6c87-4765-83a2-86f74f7a35cc">
+		<Name>Услуги</Name>
+		<Code>000000001</Code>
+		<Description>Услуги</Description>
+		<IsFolder>true</IsFolder>
+	</Item>
+</PredefinedData>

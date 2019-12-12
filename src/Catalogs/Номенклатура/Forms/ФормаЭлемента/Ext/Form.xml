@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.8">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="Закладки" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закладки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закладки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ЗакладкиРасширеннаяПодсказка" id="19"/>
+			<ChildItems>
+				<Page name="ОбщаяИнформация" id="20">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Общая информация</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Общая информация</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ОбщаяИнформацияРасширеннаяПодсказка" id="21"/>
+					<ChildItems>
+						<UsualGroup name="КодИНаименование" id="16">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Код и наименование</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Код и наименование</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="КодИНаименованиеРасширеннаяПодсказка" id="17"/>
+							<ChildItems>
+								<InputField name="Код" id="1">
+									<DataPath>Объект.Code</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+									<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+								</InputField>
+								<InputField name="Наименование" id="4">
+									<DataPath>Объект.Description</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+									<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="ВидТовара" id="24">
+							<DataPath>Объект.ВидНоменклатуры</DataPath>
+							<ContextMenu name="ВидТовараКонтекстноеМеню" id="25"/>
+							<ExtendedTooltip name="ВидТовараРасширеннаяПодсказка" id="26"/>
+						</InputField>
+						<InputField name="Склад" id="7">
+							<DataPath>1/0:e9ac5e1e-e346-473a-9501-26057dd878ad</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="СкладКонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="СкладРасширеннаяПодсказка" id="9"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="Цены" id="22">
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Цены</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Цены</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ЦеныРасширеннаяПодсказка" id="23"/>
+					<ChildItems>
+						<Table name="Цены1" id="27">
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.Цены</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="Цены1КонтекстноеМеню" id="28"/>
+							<AutoCommandBar name="Цены1КоманднаяПанель" id="29">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="Цены1РасширеннаяПодсказка" id="30"/>
+							<SearchStringAddition name="Цены1СтрокаПоиска" id="31">
+								<AdditionSource>
+									<Item>Цены1</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="Цены1СтрокаПоискаКонтекстноеМеню" id="32"/>
+								<ExtendedTooltip name="Цены1СтрокаПоискаРасширеннаяПодсказка" id="33"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="Цены1СостояниеПросмотра" id="34">
+								<AdditionSource>
+									<Item>Цены1</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="Цены1СостояниеПросмотраКонтекстноеМеню" id="35"/>
+								<ExtendedTooltip name="Цены1СостояниеПросмотраРасширеннаяПодсказка" id="36"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="Цены1УправлениеПоиском" id="37">
+								<AdditionSource>
+									<Item>Цены1</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="Цены1УправлениеПоискомКонтекстноеМеню" id="38"/>
+								<ExtendedTooltip name="Цены1УправлениеПоискомРасширеннаяПодсказка" id="39"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="Цены1НомерСтроки" id="40">
+									<DataPath>Объект.Цены.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="Цены1НомерСтрокиКонтекстноеМеню" id="41"/>
+									<ExtendedTooltip name="Цены1НомерСтрокиРасширеннаяПодсказка" id="42"/>
+								</LabelField>
+								<InputField name="Цены1Цена" id="43">
+									<DataPath>Объект.Цены.Цена</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="Цены1ЦенаКонтекстноеМеню" id="44"/>
+									<ExtendedTooltip name="Цены1ЦенаРасширеннаяПодсказка" id="45"/>
+								</InputField>
+								<InputField name="Цены1ВидЦены" id="46">
+									<DataPath>Объект.Цены.ВидЦены</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="Цены1ВидЦеныКонтекстноеМеню" id="47"/>
+									<ExtendedTooltip name="Цены1ВидЦеныРасширеннаяПодсказка" id="48"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Номенклатура</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+	<CommandInterface>
+		<NavigationPanel>
+			<Item>
+				<Command>FilterCriterion.ДокументыСНоменклатурой.StandardCommand.OpenByValue</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+			</Item>
+		</NavigationPanel>
+	</CommandInterface>
+</Form>

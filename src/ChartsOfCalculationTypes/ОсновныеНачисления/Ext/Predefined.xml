@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CalculationTypePredefinedItems" version="2.8">
+	<Item id="d66910d9-e561-486f-927a-d50109072328">
+		<Name>Больничный</Name>
+		<Code>2</Code>
+		<Description>Больничный</Description>
+		<ActionPeriodIsBase>false</ActionPeriodIsBase>
+	</Item>
+	<Item id="39548ab8-eaa3-4fe7-a948-99638f61f1fe">
+		<Name>Командировка</Name>
+		<Code>1</Code>
+		<Description>Командировка</Description>
+		<ActionPeriodIsBase>false</ActionPeriodIsBase>
+		<Displaced>
+			<CalculationType>ChartOfCalculationTypes.ОсновныеНачисления.Больничный</CalculationType>
+		</Displaced>
+	</Item>
+	<Item id="de168fb3-dab7-4ae2-aeb5-57345b666df6">
+		<Name>Оклад</Name>
+		<Code>4</Code>
+		<Description>Оклад</Description>
+		<ActionPeriodIsBase>false</ActionPeriodIsBase>
+		<Displaced>
+			<CalculationType>ChartOfCalculationTypes.ОсновныеНачисления.Больничный</CalculationType>
+			<CalculationType>ChartOfCalculationTypes.ОсновныеНачисления.Командировка</CalculationType>
+		</Displaced>
+	</Item>
+</PredefinedData>

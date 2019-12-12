@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.8">
+	<Item id="709d7107-9b06-45b1-8008-adc540f45f05">
+		<Name>Покупатели</Name>
+		<Code>000000002</Code>
+		<Description>Покупатели</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="dd3ea869-26c5-4538-935c-97b7754781bc">
+				<Name>ЭталонныйПокупатель</Name>
+				<Code>000000003</Code>
+				<Description>Эталонный покупатель</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="bfc1d4f5-55d3-41d6-9802-ecd61bd56837">
+		<Name>Поставщики</Name>
+		<Code>000000001</Code>
+		<Description>Поставщики</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="fc29df45-eba3-4fda-94c9-9fef1583f2ec">
+				<Name>ЭталонныйПоставщик</Name>
+				<Code>000000004</Code>
+				<Description>Эталонный поставщик</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+</PredefinedData>
